@@ -75,7 +75,7 @@ task tj_header_tests(type: Test) {
 
 task tj_flows_tests(type: Test) {
     useJUnitPlatform {
-        includeTags("tj_header_tests")
+        includeTags("tj_flows_tests")
     }
 }
 
