@@ -61,26 +61,8 @@ tasks.withType(Test) {
     }
 }
 
-task tj_mainpage_tests(type: Test) {
+task tj_main_tests(type: Test) {
     useJUnitPlatform {
-        includeTags("tj_mainpage_tests")
-    }
-}
-
-task tj_header_tests(type: Test) {
-    useJUnitPlatform {
-        includeTags("tj_header_tests")
-    }
-}
-
-task tj_flows_tests(type: Test) {
-    useJUnitPlatform {
-        includeTags("tj_flows_tests")
-    }
-}
-
-task tj_search_tests(type: Test) {
-    useJUnitPlatform {
-        includeTags("tj_search_tests")
+        includeTags("tj_main_tests")
     }
 }

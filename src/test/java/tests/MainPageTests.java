@@ -8,7 +8,7 @@ import pages.FlowsPage;
 import pages.MainPage;
 import pages.NewsPage;
 
-@Tag("tj_mainpage_tests")
+@Tag("tj_main_tests")
 @Owner("dmitry_endo")
 @Feature("Главная страница")
 @DisplayName("Тесты для сайта Т-Ж")

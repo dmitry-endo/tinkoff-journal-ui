@@ -1,5 +1,5 @@
 package config.web;
 
 public enum Browser {
-    firefox, chrome
+    firefox, chrome, opera
 }

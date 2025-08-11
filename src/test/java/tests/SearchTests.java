@@ -8,7 +8,7 @@ import org.junit.jupiter.params.provider.ValueSource;
 import pages.MainPage;
 import pages.SearchPage;
 
-@Tag("tj_search_tests")
+@Tag("tj_main_tests")
 @Owner("dmitry_endo")
 @Feature("Поиск")
 @DisplayName("Тесты для сайта Т-Ж")
