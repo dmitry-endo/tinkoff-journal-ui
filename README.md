@@ -70,7 +70,7 @@ ____
 
 ____
 <a id="jenkins"></a>
-## <img alt="Jenkins" height="25" src="media/logos/Jenkins.svg" width="25"/></a><a name="Сборка"></a> Сборка в [Jenkins](https://jenkins.autotests.cloud/job/C35-dmitry_endo-Lesson14HomeWork/)</a>
+## <img alt="Jenkins" height="25" src="media/logos/Jenkins.svg" width="25"/></a><a name="Сборка"></a> Сборка в [Jenkins](https://jenkins.autotests.cloud/job/C35-dmitry_endo-tinkoff_journal_ui/)</a>
 ____
 <p align="center">  
 <a href="https://jenkins.autotests.cloud/job/35-julpro-hw14/"><img src="media/results/jenkins_job.png" alt="Jenkins" width="850"/></a>  
@@ -87,13 +87,17 @@ gradle clean test -Denv=local
 
 ***Удалённый запуск через Jenkins:***
 ```bash  
-gradle clean test -Denv=remote
+gradle clean test 
+-Denv=remote 
+-Dbrowser=${BROWSER_NAME}
+-DbrowserVersion=${BROWSER_VERSION}
+-DbrowserSize=${SCREEN_RESOLUTION}
 ```
 
 
 ___
 <a id="allure"></a>
-## <img alt="Allure" height="25" src="media/logos/Allure.svg" width="25"/></a> <a name="Allure"></a> Allure [отчет](https://jenkins.autotests.cloud/job/C35-dmitry_endo-Lesson14HomeWork/5/allure/)</a>
+## <img alt="Allure" height="25" src="media/logos/Allure.svg" width="25"/></a> <a name="Allure"></a> Allure [отчет](https://jenkins.autotests.cloud/job/C35-dmitry_endo-tinkoff_journal_ui/12/allure/)</a>
 ___
 
 ### *Основная страница отчёта*
@@ -136,17 +140,17 @@ ____
 
 ___
 <a id="integrations"></a>
-## <img alt="Allure TestOps" height="25" src="media/logos/Allure2.svg" width="25"/></a> <a name="Интеграция с Allure TestOps"></a>Интеграция с [Allure TestOps](https://allure.autotests.cloud/project/4812/dashboards)</a>
+## <img alt="Allure TestOps" height="25" src="media/logos/Allure2.svg" width="25"/></a> <a name="Интеграция с Allure TestOps"></a>Интеграция с [Allure TestOps](https://allure.autotests.cloud/project/4877/dashboards)</a>
 ___
 
 ### *Основные страницы*
 
 <p align="center">  
-<img title="Allure TestOps" src="media/" width="950">  
+<img title="Allure TestOps" src="media/results/allure_testops_dashboard.png" width="950">  
 </p>  
 
 <p align="center">  
-<img title="Allure Tests" src="media/" width="950">  
+<img title="Allure Tests" src="media/results/allure_testops_cases.png" width="950">  
 </p>
 
 ____
