@@ -24,10 +24,13 @@ ____
 * <a href="#telegram">Уведомление в Telegram при помощи бота</a>
 
 * <a href="#video">Примеры видео выполнения тестов на Selenoid</a>
+
+* <a href="#integrations">Интеграция с Allure TestOps</a>
+
+
 ____
 <a id="tools"></a>
 ## <a name="Технологии и инструменты">**Технологии и инструменты:**</a>
-
 
 
 <p align="center">  
@@ -39,13 +42,16 @@ ____
 <a href="https://selenide.org/"><img src="media/logos/Selenide.svg" width="50" height="50"  alt="Selenide"/></a>  
 <a href="https://aerokube.com/selenoid/"><img src="media/logos/Selenoid.svg" width="50" height="50"  alt="Selenoid"/></a>
 <a href="https://www.jenkins.io/"><img src="media/logos/Jenkins.svg" width="50" height="50"  alt="Jenkins"/></a>  
-<a href="ht[images](images)tps://github.com/allure-framework/allure2"><img src="media/logos/Allure.svg" width="50" height="50"  alt="Allure"/></a> 
+<a href="ht[images](images)tps://github.com/allure-framework/allure2"><img src="media/logos/Allure.svg" width="50" height="50"  alt="Allure"/></a>
+<a href="https://qameta.io/"><img src="media/logos/Allure2.svg" width="50" height="50"  alt="Allure TestOps"/></a>
 </p>
 
 - Автотесты написаны в <code>IntelliJ IDEA</code> на языке <code>Java</code> c помощью фреймворков <code>Selenide</code> и <code>JUnit 5</code>.
 - При сборке проекта используется <code>Gradle</code>.
 - При прогоне тестов браузер запускается в <code>Selenoid-контейнерах</code>.
 - Для удаленного запуска реализована джоба в <code>Jenkins</code> с формированием Allure-отчета и автоматической отправкой результатов в <code>Telegram</code> (при помощи бота).
+- Реализована интеграция с <code>Allure TestOps</code>.
+
 
 ____
 <a id="cases"></a>
@@ -55,8 +61,11 @@ ____
 ✓ *Проверка появления модального окна входа в профиль*  
 ✓ *Проверка названия и количества основных вкладок навигации в хедере*  
 ✓ *Проверка появления окошка с уведомлениями*  
+✓ *Проверка появления и размера меню с предлагаемыми запросами после нажатия на поиск*  
 ✓ *Проверка основных категорий на странице Потоки*  
-
+✓ *Проверка количества категорий на странице Потоки*  
+✓ *Проверка успешного поискового запроса*  
+✓ *Проверка неуспешного поискового запроса*
 
 
 ____
@@ -73,20 +82,15 @@ ____
 ___
 ***Локальный запуск:***
 ```bash  
-gradle clean tj_simple_tests
+gradle clean test -Denv=local
 ```
 
 ***Удалённый запуск через Jenkins:***
 ```bash  
-clean
-${TASK}
--DbrowserName=${BROWSER_NAME}
--DbrowserVersion=${BROWSER_VERSION}
--DscreenResolution=${SCREEN_RESOLUTION}
--DselenoidRemoteHost=${SELENOID_REMOTE_HOST}
--DselenoidLogin=${SELENOID_LOGIN}
--DselenoidPassword=${SELENOID_PASSWORD}
+gradle clean test -Denv=remote
 ```
+
+
 ___
 <a id="allure"></a>
 ## <img alt="Allure" height="25" src="media/logos/Allure.svg" width="25"/></a> <a name="Allure"></a> Allure [отчет](https://jenkins.autotests.cloud/job/C35-dmitry_endo-Lesson14HomeWork/5/allure/)</a>
@@ -119,6 +123,7 @@ ____
 <img title="Telegram Notification" src="media/results/tg_notification.png" width="550">  
 </p>
 
+
 ____
 <a id="video"></a>
 ## <img alt="Selenoid" height="25" src="media/logos/Selenoid.svg" width="25"/></a> Примеры видео выполнения тестов на Selenoid
@@ -130,3 +135,18 @@ ____
 </p>
 
 ___
+<a id="integrations"></a>
+## <img alt="Allure TestOps" height="25" src="media/logos/Allure2.svg" width="25"/></a> <a name="Интеграция с Allure TestOps"></a>Интеграция с [Allure TestOps](https://allure.autotests.cloud/project/4812/dashboards)</a>
+___
+
+### *Основные страницы*
+
+<p align="center">  
+<img title="Allure TestOps" src="media/" width="950">  
+</p>  
+
+<p align="center">  
+<img title="Allure Tests" src="media/" width="950">  
+</p>
+
+____
