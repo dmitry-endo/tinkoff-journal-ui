@@ -5,7 +5,7 @@
 </p>
 
 
-# Проект по автоматизации тестирования для сайта [Т-Ж](https://t-j.ru/)
+# Проект по автоматизации тестирования сайта [Т-Ж](https://t-j.ru/)
 
 
 ## **Содержание:**
@@ -73,7 +73,7 @@ ____
 ## <img alt="Jenkins" height="25" src="media/logos/Jenkins.svg" width="25"/></a><a name="Сборка"></a> Сборка в [Jenkins](https://jenkins.autotests.cloud/job/C35-dmitry_endo-tinkoff_journal_ui/)</a>
 ____
 <p align="center">  
-<a href="https://jenkins.autotests.cloud/job/35-julpro-hw14/"><img src="media/results/jenkins_job.png" alt="Jenkins" width="850"/></a>  
+<a href="https://jenkins.autotests.cloud/job/C35-dmitry_endo-tinkoff_journal_ui/"><img src="media/results/jenkins_job.png" alt="Jenkins" width="850"/></a>  
 </p>
 
 
@@ -146,7 +146,7 @@ ___
 ### *Основные страницы*
 
 <p align="center">  
-<img title="Allure TestOps" src="media/results/allure_testops_dashboard.png" width="950">  
+<a href="https://allure.autotests.cloud/project/4877/dashboards"><img title="Allure TestOps" src="media/results/allure_testops_dashboard.png" width="950">  
 </p>  
 
 <p align="center">  
