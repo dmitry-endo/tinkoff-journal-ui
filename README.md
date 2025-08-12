@@ -146,7 +146,7 @@ ___
 ### *Основные страницы*
 
 <p align="center">  
-<a href="https://allure.autotests.cloud/project/4877/dashboards"><img title="Allure TestOps" src="media/results/allure_testops_dashboard.png" width="950">  
+<a href="https://allure.autotests.cloud/project/4877/dashboards"><img title="Allure TestOps" src="media/results/allure_testops_dashboard.png" width="950"></a>  
 </p>  
 
 <p align="center">  
