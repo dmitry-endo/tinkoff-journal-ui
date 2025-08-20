@@ -25,8 +25,8 @@ public class MainPage {
     private final ElementsCollection headerNavTabs = $$("[aria-label='Основная навигация'] a");
     private final SelenideElement searchIcon = $("[aria-label='Поиск']");
     private final SelenideElement searchInput = $("[aria-label='Поле поиска']");
-    private final SelenideElement searchSuggestWrapper = $("._suggest_ye5a1_165");
-    private final ElementsCollection suggestQueriesList = $$("._suggest_ye5a1_165 li");
+    private final SelenideElement searchSuggestWrapper = $("[class^='_suggest']");
+    private final ElementsCollection suggestQueriesList = $$("[class^='_suggest'] li");
 
     @Step("Открываем главную страницу")
     public MainPage openPage() {
