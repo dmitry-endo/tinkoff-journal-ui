@@ -12,19 +12,12 @@
 ____
 
 * <a href="#tools">Технологии и инструменты</a>
-
 * <a href="#cases">Примеры автоматизированных тест-кейсов</a>
-
 * <a href="#jenkins">Сборка в Jenkins</a>
-
 * <a href="#console">Команды для запуска из терминала</a>
-
 * <a href="#allure">Allure отчет</a>
-
 * <a href="#telegram">Уведомление в Telegram при помощи бота</a>
-
 * <a href="#video">Примеры видео выполнения тестов на Selenoid</a>
-
 * <a href="#integrations">Интеграция с Allure TestOps</a>
 
 
