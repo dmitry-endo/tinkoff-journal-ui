@@ -30,7 +30,12 @@ public class ProjectConfig {
                     "enableVideo", true,
                     "name", "Test: " + UUID.randomUUID()
             ));
-            Configuration.remote = webConfig.getRemoteUrl();
+            Configuration.remote = String.format(
+                    "https://%s:%s@%s/wd/hub",
+                    webConfig.getSelenoidLogin(),
+                    webConfig.getSelenoidPassword(),
+                    webConfig.getSelenoidRemoteHost()
+            );
             Configuration.browserCapabilities = capabilities;
         }
     }

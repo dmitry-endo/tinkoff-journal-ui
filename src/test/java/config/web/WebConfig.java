@@ -13,9 +13,15 @@ public interface WebConfig extends Config {
     @DefaultValue("https://t-j.ru")
     String getBaseUrl();
 
-    @Key("remoteUrl")
-    @DefaultValue("https://t-j.ru")
-    String getRemoteUrl();
+    @Key("selenoidLogin")
+    String getSelenoidLogin();
+
+    @Key("selenoidPassword")
+    String getSelenoidPassword();
+
+    @Key("selenoidRemoteHost")
+    @DefaultValue("selenoid.autotests.cloud")
+    String getSelenoidRemoteHost();
 
     @Key("browser")
     @DefaultValue("chrome")

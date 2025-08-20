@@ -82,6 +82,8 @@ gradle clean test -Denv=local
 ```bash  
 gradle clean test 
 -Denv=remote 
+-Dusername=
+-Dpassword=
 -Dbrowser=${BROWSER_NAME}
 -DbrowserVersion=${BROWSER_VERSION}
 -DbrowserSize=${SCREEN_RESOLUTION}
