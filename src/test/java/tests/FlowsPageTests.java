@@ -9,7 +9,7 @@ import pages.MainPage;
 
 @Tag("tj_main_tests")
 @Owner("dmitry_endo")
-@Feature("Страница Потоки")
+@Feature("Основной контент")
 @DisplayName("Тесты для сайта Т-Ж")
 public class FlowsPageTests extends BaseTest {
 
@@ -17,7 +17,7 @@ public class FlowsPageTests extends BaseTest {
     private final FlowsPage flowsPage = new FlowsPage();
 
     @Test
-    @Story("Основной контент")
+    @Story("Страница Потоки")
     @Severity(SeverityLevel.NORMAL)
     @DisplayName("Проверка основных категорий на странице Потоки")
     void flowsPageShouldHaveExpectedCategoriesTest() {

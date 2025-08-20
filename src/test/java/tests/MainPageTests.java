@@ -10,7 +10,7 @@ import pages.NewsPage;
 
 @Tag("tj_main_tests")
 @Owner("dmitry_endo")
-@Feature("Главная страница")
+@Feature("Основной контент")
 @DisplayName("Тесты для сайта Т-Ж")
 public class MainPageTests extends BaseTest {
 
@@ -18,7 +18,7 @@ public class MainPageTests extends BaseTest {
     private final NewsPage newsPage = new NewsPage();
 
     @Test
-    @Story("Основной контент")
+    @Story("Главная страница")
     @Severity(SeverityLevel.MINOR)
     @DisplayName("Проверка новостной ленты на главной странице")
     void newsFeedShouldBeVisibleAndClickableTest() {
