@@ -9,8 +9,8 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class SearchPage {
 
-    private final SelenideElement searchInput = $("._input_3vps6_13");
-    private final SelenideElement searchCount = $("._searchCount_1orx6_9");
+    private final SelenideElement searchInput = $("[placeholder='Что вам найти?']");
+    private final SelenideElement searchCount = $("[class^='_searchCount']");
 
     @Step("Проверяем, что в поле для ввода присутствует значение {0}")
     public SearchPage inputFieldShouldHaveEnteredValue(String value) {

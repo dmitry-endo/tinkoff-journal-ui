@@ -18,7 +18,7 @@ public class MainPage {
 
     private final SelenideElement newsFeedWrapper = $("[data-level-type='news']");
     private final SelenideElement sectionsWrapper = $("[aria-label='Разделы']");
-    private final SelenideElement notificationsWindowWrapper = $("._notificationWrap_inie6_15");
+    private final SelenideElement notificationsWindowWrapper = $("[class^='_notificationWrap']");
     private final SelenideElement notificationsIcon = $("[aria-label='Уведомления']");
     private final SelenideElement loginModalWindowWrapper = $("[aria-labelledby='dialog-title']");
     private final SelenideElement profileIcon = $("[aria-label='Авторизоваться']");
