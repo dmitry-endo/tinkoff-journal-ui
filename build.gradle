@@ -61,8 +61,8 @@ tasks.withType(Test) {
     }
 }
 
-task tj_main_tests(type: Test) {
+task tj_tests(type: Test) {
     useJUnitPlatform {
-        includeTags("tj_main_tests")
+        includeTags("tj_tests")
     }
 }

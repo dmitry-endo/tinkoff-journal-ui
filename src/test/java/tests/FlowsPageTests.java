@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import pages.FlowsPage;
 import pages.MainPage;
 
-@Tag("tj_main_tests")
+@Tag("tj_tests")
 @Owner("dmitry_endo")
 @Feature("Основной контент")
 @DisplayName("Тесты для сайта Т-Ж")
