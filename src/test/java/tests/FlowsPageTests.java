@@ -35,7 +35,7 @@ public class FlowsPageTests extends BaseTest {
     }
 
     @Test
-    @Story("Основной контент")
+    @Story("Страница Потоки")
     @Severity(SeverityLevel.MINOR)
     @DisplayName("Проверка количества категорий на странице Потоки")
     void checkFlowsPageSizeTest() {
