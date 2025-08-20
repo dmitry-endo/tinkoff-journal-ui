@@ -80,8 +80,12 @@ gradle clean test -Denv=local
 
 ***Удалённый запуск через Jenkins:***
 ```bash  
-gradle clean test -Denv=remote
+gradle clean test 
+-Denv=remote
+-DselenoidLogin=YOUR_SELENOID_LOGIN
+-DselenoidPassword=YOUR_SELENOID_PASSWORD
 ```
+где <code>YOUR_SELENOID_LOGIN</code> & <code>YOUR_SELENOID_PASSWORD</code> ваши учетные данные Selenoid фермы.
 
 
 
